@@ -1,0 +1,106 @@
+#Maya and Yussef, 10/17/2023
+#This program is formatted as a quiz and can be used to help suggest careers based off of your answers.
+
+score = 0
+#Get the users name
+yourname = input("What's your name?:")
+#Welcome message
+print()
+print("Welcome to the quiz", "\033[35m", yourname, "\033[0m")
+print(
+    "This quiz will suggest you future possible careers based off of your answers!")
+print()
+#Display the list of school subjects
+subjects = ["Math", "Science", "English"]
+print(subjects)
+#Get the users faviorte subject
+favoriteSubject = input("Out of this list, which is your favorite school subject?:")
+#Assign score based off of user's choice
+if favoriteSubject == "Math":
+  score = score + 1
+elif favoriteSubject == "Science":
+  score = score + 2
+elif favoriteSubject == "English":
+  score = score + 3
+else:
+  print("Please choose a subject from the list")
+print()
+#Display the list of favorite hobbies
+hobbies = ["Board Games", "Coding", "Reading"]
+print(hobbies)
+#Get the users favorite hobbie
+favoritehobbies = input("Out of this list what is your favorite activity:")
+#Assign score based off of user's choice
+if favoritehobbies == "Board Games":
+  score = score + 1
+elif favoritehobbies == "Coding":
+  score = score + 2
+elif favoritehobbies == "Reading":
+  score = score + 3
+else:
+  print("Please choose an activity from the list!")
+#Display the list for favorite working environments
+print()
+workingEnvironment = ["Office","Lab","School"]
+print(workingEnvironment)
+#Get the users favorite working environment
+workingEnviornment = input("Out of this list what is the best working environment?:")
+#Assign score based off of user's choice
+if workingEnviornment == "Office":
+  score = score + 1
+elif workingEnviornment == "Lab":
+  score = score + 2
+elif workingEnviornment == "School":
+  score = score + 3
+else:
+  print("Please choose an envionrment from the list:")
+#Display the list for workingSchedule
+print()
+workingSchedule = ["Part-Time,", "Full-time", "Flexible"]
+print(workingSchedule)
+#Get the user's preffered working schedule
+workingSchedule = input("What is your preferred working schedule?:")
+#Assign score baseed off of user's choice
+if workingSchedule == "Part Time":
+  score = score + 1
+elif workingSchedule == "Full Time":
+  score = score + 2
+elif workingSchedule == "Flexible":
+  score = score + 3
+else:
+  print("Please choose a Career from the list:")
+print()
+#Display the list for favoriteCareer
+favoriteCareer = ["Engineering", "Scientist", "Teaching"]
+print(favoriteCareer)
+#Get user's favorite career
+favoriteCareer = input("Choose a career that you like the most:")
+#Assign score based off of user's choice
+if favoriteCareer == "Engineering":
+  score = score + 1
+elif favoriteCareer == "Scientist":
+  score = score + 2
+elif favoriteCareer == "Teaching":
+  score = score + 3
+else:
+  print("Please choose a career from the list")
+  print()
+#Determine and display career suggestions based off of the total score
+print()
+if 4 <= score <= 8:
+  print(
+      "You can be an Engineer, Mathematician, Accountant, Businesman, and more!"
+  )
+elif 8 < score <= 11:
+  print(
+      "You can become a Scientist, Researcher, Biologist, Chemist, and more!")
+elif score > 11:
+  print(
+      "You can become a Teacher, Professor, Journalist, Principle, Lawyer and more!"
+  )
+print()
+print(
+    "I hope this quiz helped on deciding a future career you'd like to pursue!"
+)
+print()
+print("Thank you for taking this quiz", "\033[35m", yourname, "\033[0m")
